@@ -1,0 +1,19 @@
+{
+  "name": "decifer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-1": "npx ts-node ./src/1/main.ts",
+    "test-4": "npx ts-node ./src/4/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
