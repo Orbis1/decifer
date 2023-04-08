@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prebuild": "cp index.html dist/index.html",
     "build": "tsc",
+    "postbuild": "cp index.html dist/index.html",
     "build-w": "tsc --watch",
     "test-1": "npx nodemon ./src/1/main.ts",
     "test-4": "npx ts-node ./src/4/index.ts"
