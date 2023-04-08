@@ -54,5 +54,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           email: infectores@gmail.com
-          build_dir: dist
           branch: gh-pages
