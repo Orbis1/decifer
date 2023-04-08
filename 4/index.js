@@ -1,12 +1,13 @@
 "use strict";
 const isCorrectPassword = (password) => {
-    const chars = password.replace(/\d/gm, '');
-    const numbers = password.split(/[а-яА-Я]/gm);
+    const buses = password.split(' ');
+    const chars = buses.map(b => b.replace(/\d/gm, ''));
+    const numbers = buses.map(b => b.replace(/[а-яА-Я]/gm, ''));
     const sum = numbers
         .map(n => parseInt(n, 10))
         .filter(n => !Number.isNaN(n))
         .reduce((a, b) => a + b);
-    console.log({ password, chars, numbers, sum });
-    return chars === 'БММММ' && sum === 873;
+    console.log({ password, buses, chars, numbers, sum });
+    return chars.join() === 'БММММ' && sum === 873;
 };
-isCorrectPassword('Б1М2М3М4М');
+isCorrectPassword('Б 298 М2 М3 М4 М1');
