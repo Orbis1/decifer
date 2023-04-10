@@ -10,4 +10,18 @@ const isCorrectPassword = (password) => {
     console.log({ password, buses, chars, numbers, sum });
     return chars.join() === 'БММММ' && sum === 873;
 };
-isCorrectPassword('Б 298 М2 М3 М4 М1');
+isCorrectPassword('Б 111 М1 100 100 М1 М5 М3 552');
+/*
+
+Курский вокзал
+Б
+297 || М1 || 379 || M6
+РАН (Гагарин)
+М1 М3 800 379 175
+Институт Курчатова
+М5 379 М1
+Министерство обороны
+М5 М3 552 171 М6 469
+Восточный вокзал
+
+*/
